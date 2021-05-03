@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            Session Details
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"><link rel="stylesheet" href="classless.css" />
+        <link rel="stylesheet" href="https://classless.de/classless.css">
+    </head>
+    <body>
+        <div class="row">
+            <nav>
+                <ul>
+                  <!-- <li>Cowin Details </li>
+                  <li><a href="/state"> States</a></li>
+                  <li><a href="/districts"> District</a></li>
+                  <li><a href="/session">Sessions</a></li> -->
+                  <!-- <li class="float-right"><a href="/logout">Logout</a></li> -->
+                </ul>
+              </nav>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                {% if all_districts is not none %}
+                <table>
+                    <thead>
+                        <tr>
+                            <!-- <th> Center ID</th> -->
+                            <th>Name</th>
+                            <th> Fee Type</th>
+                            <th> Date </th>
+                            <th> From</th>
+                            <th>To</th>
+                            <th>Available Capacity</th>
+                            <th>Vaccine</th>
+                            <!-- <th>Block Name</th> -->
+                            <th>Pincode</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for session in all_seesions %} 
+                            <tr>
+                                <!-- <td>{{ session['center_id'] }}</td> -->
+                                <td>{{ session['name'] }}</td>
+                                <td>{{ session['fee_type'] }}</td>
+                                <td>{{ session['date'] }}</td>
+                                <td>{{ session['from'] }}</td>
+                                <td>{{ session['to'] }}</td>
+                                <td>{{ session['available_capacity'] }}</td>
+                                <td>{{ session['vaccine'] }}</td>
+                                <!-- <td>{{ session['block_name'] }}</td> -->
+                                <td>{{ session['pincode'] }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+            </div>
+        </div>
+    </body>
+</html>
