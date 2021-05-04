@@ -16,7 +16,7 @@
         <div class="row">
             <nav>
                 <ul>
-                  <!-- <li>Cowin Details </li> -->
+                  <li>Cowin Vaccine Centre Details </li>
                   <!-- <li><a href="/state"> States</a></li> -->
                   <!-- <li><a href="/districts"> District</a></li> -->
                   <!-- <li><a href="/session">Sessions</a></li> -->
@@ -26,7 +26,7 @@
         </div>
         <div class="row">
             <div class="col-4"></div>
-            <div class="col-4">
+            <div class="col">
                 {% if all_districts is not none %}
                 <table>
                     <thead>
@@ -46,11 +46,6 @@
                 </table>
                 {% endif %}
             </div>
-            <div class="col-4"></div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-            </div>
             <div class="col-4">
                 <div class="card">
                     <h4>Get Vaccine details</h4>
@@ -65,6 +60,25 @@
                         <input id="submit" type="submit" value="Get Details">
                     </form>
                 </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row-4">
+            </div>
+            <div class="row-4">
+                <!-- <div class="card">
+                    <h4>Get Vaccine details</h4>
+                    <br>
+                    <form method="POST" action="/">
+                        <label for="id">Distric ID</label>
+                        <input id="id" name="id" type="number" placeholder="Enter Distric id">
+                        <br>
+                        <label for="date">Date</label>
+                        <input id="date" name="date" placeholder="04-05-2021">
+                        <br>
+                        <input id="submit" type="submit" value="Get Details">
+                    </form>
+                </div> -->
             </div>
         </div>
     </body>
