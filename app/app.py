@@ -50,7 +50,7 @@ def get_districts():
 def get_sessions():
     print("I am in sessions ")
     if request.method == "GET":
-        r =requests.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=13&date=03-05-2021')
+        r =requests.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=13&date=04-05-2021')
         print(r.json())
         result = r.json()
         # print(result['sessions'])
