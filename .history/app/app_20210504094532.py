@@ -39,7 +39,6 @@ def get_districts():
         date = request.form.get("date")
         z = date.split("-")
         z.reverse()
-        date="-".join(z)
         print(date)
         basicurl = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=" + str(id) + "&date=" + str(date)
         # r =requests.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=13&date=03-05-2021')
